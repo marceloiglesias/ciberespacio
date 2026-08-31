@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Social Engineering | Ciberespacio Security</title>
+    <link rel="stylesheet" href="static/styles.css">
+    <link rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='0.9em' font-size='90'>🎭</text></svg>">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <h1>CIBERES<span>PACIO</span></h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <a href="index.html" class="cta-button">Back to Main</a>
+        <style>
+            header {
+                background-color: rgba(13, 13, 13, 0.95);
+                position: fixed;
+                width: 100%;
+                z-index: 1000;
+                padding: 1rem 5%;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-bottom: 2px solid var(--primary);
+                box-shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+                top: 0;
+                left: 0;
+            }
+
+            .service-detail {
+                max-width: 950px;
+                margin: 140px auto 40px auto;
+                background: var(--card);
+                border-radius: 12px;
+                box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.18);
+                padding: 56px 48px 48px 48px;
+                text-align: left;
+            }
+
+            .service-detail .icon {
+                color: var(--primary);
+                font-size: 3.5rem;
+                margin-bottom: 18px;
+                display: block;
+                text-align: center;
+            }
+
+            .service-detail .main-title {
+                font-size: 2.6rem;
+                color: var(--primary);
+                font-weight: 800;
+                margin-bottom: 18px;
+                margin-top: 0;
+                text-align: center;
+                letter-spacing: 1px;
+            }
+
+            .service-detail .subtitle {
+                color: var(--text);
+                font-size: 1.13rem;
+                margin-bottom: 32px;
+                margin-top: 0;
+                text-align: left;
+                line-height: 1.7;
+            }
+
+            .service-detail .section-label {
+                color: var(--primary);
+                font-size: 1.25rem;
+                font-weight: 700;
+                margin: 36px 0 18px 0;
+                text-align: left;
+                letter-spacing: 0.5px;
+            }
+
+            .service-detail ul {
+                text-align: left;
+                margin: 0 auto;
+                max-width: 800px;
+                padding-left: 1.2em;
+                list-style: none;
+            }
+
+            .service-detail ul li {
+                margin-bottom: 18px;
+                padding-left: 0.5em;
+                position: relative;
+                color: var(--text);
+                font-size: 1.08rem;
+                line-height: 1.7;
+            }
+
+            .service-detail ul li:before {
+                content: '\2022';
+                color: var(--primary);
+                font-weight: bold;
+                display: inline-block;
+                width: 1em;
+                margin-left: -1em;
+            }
+
+            @media (max-width: 900px) {
+                .service-detail {
+                    max-width: 98vw;
+                    padding: 32px 8px 24px 8px;
+                }
+
+                .service-detail ul {
+                    max-width: 98vw;
+                }
+            }
+        </style>
+
+    </header>
+    <main>
+        <section class="service-detail">
+            <span class="icon"><i class="fas fa-lock"></i></span>
+            <h1 class="main-title">Social Engineering</h1>
+            <p class="subtitle">
+                Testing the Human Element Through Simulated Deception<br><br>
+                Humans are often the weakest link in cybersecurity. We replicate real-world social engineering attacks
+                to identify behavioral vulnerabilities and improve awareness.
+            </p>
+            <div class="section-label">Key Services</div>
+            <ul>
+                <li>
+                    <strong>Phishing Campaigns:</strong> Targeted and mass campaigns simulate credential harvesting,
+                    malware delivery, or BEC-style attacks.
+                </li>
+                <li>
+                    <strong>Pretexting and Impersonation:</strong> Our operators pose as internal staff, vendors, or
+                    third parties to manipulate targets into divulging sensitive information.
+                </li>
+                <li>
+                    <strong>Physical Intrusion Testing:</strong> We attempt unauthorized access to facilities, including
+                    tailgating, badge cloning, and USB drops, to test physical security and human vigilance.
+                </li>
+                <li>
+                    <strong>Vishing and Smishing:</strong> Voice- and SMS-based social engineering campaigns test
+                    susceptibility to manipulation via mobile and verbal communication.
+                </li>
+                <li>
+                    <strong>Awareness Metrics & Reporting:</strong> Comprehensive reports include open rates,
+                    click-throughs, response times, and improvement recommendations.
+                </li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-col">
+                <div class="logo">
+                    <i class="fas fa-shield-alt"></i>
+                    <h1>CIBERES<span>PACIO</span></h1>
+                </div>
+                <p>Advanced security testing for organizations facing sophisticated threats.</p>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-keybase"></i></a>
+                </div>
+            </div>
+            <div class="footer-col">
+                <h4>Services</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Penetration Testing</a></li>
+                    <li><a href="#">Red Teaming</a></li>
+                    <li><a href="#">Cloud Security</a></li>
+                    <li><a href="#">Social Engineering</a></li>
+                    <li><a href="#">AI Security</a></li>
+                    <li><a href="#">Specialized Training</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Company</h4>
+                <ul class="footer-links">
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Careers</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Resources</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Security Whitepapers</a></li>
+                    <li><a href="#">Webinars</a></li>
+                    <li><a href="#">Security Tools</a></li>
+                    <li><a href="#">Vulnerability Database</a></li>
+                    <li><a href="#">Security Glossary</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Ciberespacio Security. All rights reserved. | Operates under strict legal and ethical
+                guidelines</p>
+        </div>
+    </footer>
+</body>
+
+</html>
