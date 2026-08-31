@@ -228,6 +228,6 @@ Temporary Items
 # Otros
 coverage/
 .nyc_output/
-
-# Carpeta de referencia de Zoho (solo local)
 f/
+f/**
+**.md

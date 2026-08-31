@@ -72,7 +72,7 @@ const Contact = () => {
     // Crear un formulario temporal que se enviará a Zoho
     const tempForm = document.createElement('form')
     tempForm.method = 'POST'
-    tempForm.action = 'https://forms.zohopublic.com/julioiglesiascibere1/form/ContactUs/formperma/ureW1KKpkQJID7CeMzhKuj6moDq8DdhHHjJwETUcos0/htmlRecords/submit'
+    tempForm.action = 'https://forms.zohopublic.com/julioiglesiascibere1/form/Services/formperma/r4-tTkLoQSSsRiTLlTSxQMwHXNNFGAbW24CaJGJSQhw/htmlRecords/submit'
     tempForm.target = 'zoho-submit-iframe'
     tempForm.style.display = 'none'
 
