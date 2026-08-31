@@ -230,3 +230,4 @@ coverage/
 .nyc_output/
 f/
 f/**
+**.md
