@@ -39,7 +39,7 @@ const Contact = () => {
 
       // Enviar a Zoho Forms
       const response = await fetch(
-        'https://forms.zohopublic.com/julioiglesiascibere1/form/ContactUs/formperma/dCsngHBI7ErT0zuO_VXapVKhITtwshbkXkRh-KEIdZg/htmlRecords/submit',
+        'https://forms.zohopublic.com/julioiglesiascibere1/form/ContactUs/formperma/r4-tTkLoQSSsRiTLlTSxQMwHXNNFGAbW24CaJGJSQhw-KEIdZg/htmlRecords/submit',
         {
           method: 'POST',
           body: zohoFormData,

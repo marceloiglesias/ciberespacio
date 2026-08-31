@@ -164,10 +164,6 @@ index-backup.html
 
 # Component backups (archivos temporales de desarrollo)
 src/components/*_OLD.jsx
-src/components/*_Zoho_*.jsx
-src/components/Contact_OLD.jsx
-src/components/Contact_Zoho_API.jsx
-src/components/Contact_Zoho_Embedded.jsx
 
 # Archivos temporales de desarrollo
 git.txt
