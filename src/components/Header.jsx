@@ -37,6 +37,12 @@ const Header = () => {
     }
   }
 
+  const scrollToContact = (e) => {
+    e.preventDefault()
+    closeMenu()
+    scrollToSection(e, '#contact')
+  }
+
   return (
     <header className={isScrolled ? 'scrolled' : ''}>
       <div className="logo">
@@ -62,10 +68,10 @@ const Header = () => {
           <li><a href="#testimonials" onClick={(e) => scrollToSection(e, '#testimonials')}>Clients</a></li>
           <li><a href="#contact" onClick={(e) => scrollToSection(e, '#contact')}>Contact</a></li>
         </ul>
-        <button className="cta-button nav-cta">Get Assessment</button>
+        <button className="cta-button nav-cta" onClick={scrollToContact}>Get Assessment</button>
       </nav>
 
-      <button className="cta-button desktop-cta">Get Assessment</button>
+      <button className="cta-button desktop-cta" onClick={scrollToContact}>Get Assessment</button>
     </header>
   )
 }

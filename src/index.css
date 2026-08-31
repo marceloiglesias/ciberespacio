@@ -434,9 +434,72 @@ section[id] {
     margin-right: 15px;
 }
 
+/* Zoho Form Container */
+.zoho-form-container {
+    background: var(--card);
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #333;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+}
+
+.zoho-form-container iframe {
+    min-height: 600px;
+    display: block;
+}
+
 .contact-form form {
     display: flex;
     flex-direction: column;
+}
+
+/* Rate Limit Message */
+.rate-limit-message {
+    background: var(--card);
+    border: 2px solid var(--primary);
+    border-radius: 8px;
+    padding: 40px;
+    text-align: center;
+}
+
+.rate-limit-message i {
+    font-size: 4rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.rate-limit-message h3 {
+    font-size: 1.8rem;
+    color: var(--accent);
+    margin-bottom: 15px;
+}
+
+.rate-limit-message p {
+    font-size: 1.1rem;
+    color: #aaa;
+    margin-bottom: 10px;
+    line-height: 1.6;
+}
+
+.submission-count {
+    font-weight: 600;
+    color: var(--primary);
+    margin-top: 20px;
+    padding: 10px;
+    background: rgba(198, 40, 40, 0.1);
+    border-radius: 4px;
+}
+
+.submission-info {
+    text-align: center;
+    margin-top: 15px;
+    font-size: 0.9rem;
+    color: #777;
+}
+
+.required {
+    color: var(--primary);
+    margin-left: 3px;
 }
 
 .form-group {
@@ -450,7 +513,8 @@ section[id] {
 }
 
 .form-group input,
-.form-group textarea {
+.form-group textarea,
+.form-group select {
     width: 100%;
     padding: 12px;
     background: var(--card);
@@ -458,6 +522,29 @@ section[id] {
     border-radius: 4px;
     color: var(--text);
     font-size: 1rem;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+    border-color: var(--primary);
+    box-shadow: 0 0 0 2px rgba(198, 40, 40, 0.2);
+    outline: none;
+}
+
+.form-group select {
+    cursor: pointer;
+    appearance: none;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath fill='%23c62828' d='M6 9L1 4h10z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right 12px center;
+    padding-right: 36px;
+}
+
+.form-group select option {
+    background: var(--card);
+    color: var(--text);
 }
 
 .form-group textarea {
