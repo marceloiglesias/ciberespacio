@@ -3,7 +3,7 @@
  *
  * CÓMO USAR:
  * 1. Abre el formulario de Zoho en tu navegador:
- *    https://forms.zohopublic.com/julioiglesiascibere1/form/ContactUs/formperma/dCsngHBI7ErT0zuO_VXapVKhITtwshbkXkRh-KEIdZg
+ *    https://forms.zohopublic.com/julioiglesiascibere1/form/ContactUs/formperma/ureW1KKpkQJID7CeMzhKuj6moDq8DdhHHjJwETUcos0
  *
  * 2. Abre la consola del navegador (F12)
  *
@@ -15,7 +15,7 @@
  *    listo para copiar y pegar en Contact.jsx
  */
 
-(function() {
+(function () {
   console.log('🔍 Buscando campos del formulario de Zoho...\n');
 
   // Buscar todos los inputs, textareas y selects
@@ -37,9 +37,9 @@
     const name = input.getAttribute('name');
     const type = input.type || input.tagName.toLowerCase();
     const label = input.getAttribute('placeholder') ||
-                  input.getAttribute('aria-label') ||
-                  input.id ||
-                  'Campo sin etiqueta';
+      input.getAttribute('aria-label') ||
+      input.id ||
+      'Campo sin etiqueta';
 
     console.log(`Campo ${index + 1}:`);
     console.log(`  Nombre: "${name}"`);
