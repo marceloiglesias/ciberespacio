@@ -1,36 +1,232 @@
 # Dependencies
 node_modules/
+/.pnp
+.pnp.js
 
-# Build output
+# Testing
+/coverage
+
+# Production build
 dist/
 build/
+*.local
 
 # Environment variables
 .env
 .env.local
-.env.production
+.env.development.local
+.env.test.local
+.env.production.local
+.env.*.local
 
-# Editor directories
-.vscode/
+# Editor directories and files
+.vscode/*
+!.vscode/extensions.json
 .idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+*.code-workspace
+
+# IDE - VSCode
+.vscode/
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
 
 # OS files
 .DS_Store
 Thumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+*.lnk
 
 # Logs
+logs/
 *.log
 npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
 # Cache
 .cache/
+.npm
+.eslintcache
+.stylelintcache
+*.tsbuildinfo
 
+# Temporary files
+*.tmp
+*.temp
+*.swp
+*.swo
+*~
+.cache
+
+# Vite
+dist-ssr
+*.local
+
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
+
+# TypeScript cache
+*.tsbuildinfo
+
+# Optional npm cache directory
+.npm
+
+# Optional eslint cache
+.eslintcache
+
+# Optional stylelint cache
+.stylelintcache
+
+# Microbundle cache
+.rpt2_cache/
+.rts2_cache_cjs/
+.rts2_cache_es/
+.rts2_cache_umd/
+
+# Optional REPL history
+.node_repl_history
+
+# Output of 'npm pack'
+*.tgz
+
+# Yarn
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# parcel-bundler cache
+.parcel-cache
+
+# Next.js build output
+.next
+out
+
+# Nuxt.js build / generate output
+.nuxt
+
+# Gatsby files
+.cache/
+
+# vuepress build output
+.vuepress/dist
+
+# Serverless directories
+.serverless/
+
+# FuseBox cache
+.fusebox/
+
+# DynamoDB Local files
+.dynamodb/
+
+# TernJS port file
+.tern-port
+
+# Stores VSCode versions used for testing VSCode extensions
+.vscode-test
+
+# yarn v2
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# Claude Code
 .claude/
-.claude/**
-**.md
 
-node_modules/
-node_modules/**
-
+# Backup files
+*_OLD.*
+*_backup.*
+*.backup
+*-backup.*
 index-backup.html
+
+# Component backups (archivos temporales de desarrollo)
+src/components/*_OLD.jsx
+src/components/*_Zoho_*.jsx
+src/components/Contact_OLD.jsx
+src/components/Contact_Zoho_API.jsx
+src/components/Contact_Zoho_Embedded.jsx
+
+# Archivos temporales de desarrollo
 git.txt
+todo.txt
+notes.txt
+scratch.*
+
+# Archivos de configuración local de Zoho
+f/
+
+# Archivos comprimidos temporales
+*.zip
+!Contact_Us.zip
+
+# Archivos de sistema y temporales de Windows
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
+*.stackdump
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+Icon
+._*
+.DocumentRevisions-V100
+.fseventsd
+.Spotlight-V100
+.TemporaryItems
+.Trashes
+.VolumeIcon.icns
+.com.apple.timemachine.donotpresent
+.AppleDB
+.AppleDesktop
+Network Trash Folder
+Temporary Items
+.apdisk
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+# Archivos de lockfile (mantener solo uno)
+# Si usas npm, descomenta la siguiente línea:
+# package-lock.json
+# Si usas yarn:
+# yarn.lock
+# Si usas pnpm:
+# pnpm-lock.yaml
+
+# Otros
+coverage/
+.nyc_output/
+f/
+f/**
