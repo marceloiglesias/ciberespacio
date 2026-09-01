@@ -43,7 +43,7 @@ const About = () => {
         <div
           className="about-image"
           style={{
-            backgroundImage: 'url(images/about.jpg)',
+            backgroundImage: 'url(/images/about.jpg)',
             backgroundSize: 'cover',
             backgroundPosition: 'center'
           }}

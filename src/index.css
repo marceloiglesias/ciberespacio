@@ -179,7 +179,7 @@ nav ul li a.active::after {
     display: flex;
     align-items: center;
     background: linear-gradient(rgba(13, 13, 13, 0.7), rgba(13, 13, 13, 0.7)),
-                url('../images/hero-bg.jpg') center/cover fixed;
+                url('/images/hero-bg.jpg') center/cover fixed;
     padding: 0 5%;
     border-radius: 0 0 24px 24px;
     box-shadow: 0 8px 32px 0 rgba(0,0,0,0.18);
