@@ -48,7 +48,7 @@ const Contact = () => {
                 width: '100%',
                 border: 'none'
               }}
-              src='https://forms.zohopublic.com/julioiglesiascibere1/form/ContactUs/formperma/r4-tTkLoQSSsRiTLlTSxQMwHXNNFGAbW24CaJGJSQhw-KEIdZg'
+              src='https://forms.zohopublic.com/julioiglesiascibere1/form/Services/formperma/r4-tTkLoQSSsRiTLlTSxQMwHXNNFGAbW24CaJGJSQhw'
             />
           </div>
         </div>
